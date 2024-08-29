@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Corredores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\JORGE CASTILLO\Documents\web maraton\logo maraton naranja.png" alt="Logo de Mi Marca" width="80" height="80"> 
+                <img src="C:\Users\JORGE CASTILLO\Documents\web maraton\LOGO FACDEF.png" alt="Logo de Mi Marca" width="55" height="80">
+                
+               
+            </div>
+
+        <div class="logo">
+                Maraton Solidaria - Aniversario FACDEF
+        </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Registro de Corredores</h1>
+            <p>Regístrate para participar en nuestra próxima carrera.</p>
+            <form id="registro-form">
+                <!-- Datos personales -->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                <input type="date" id="fechaNacimiento" name="fecha-nacimiento" placeholder="Fecha de Nacimiento" required>
+                <select id="sexo" name="sexo" required>
+                    <option value="">Selecciona tu Sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <input type="text" id="documento" name="documento" placeholder="Documento de Identidad" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                
+                <!-- Datos de participación -->
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona tu Categoría</option>
+                    <option value="10k">10k</option>
+                    <option value="5k">5k</option>
+                    <option value="3k">3k</option>
+                </select>
+                <select id="tallaCamiseta" name="talla-camiseta">
+                    <option value="">Talla de Camiseta (Opcional)</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+                <input type="text" id="tiempoEstimado" name="tiempo-estimado" placeholder="Tiempo que estima finalizar la carrera (minutos)" required>
+                
+                <!-- Datos de emergencia -->
+                <input type="text" id="contactoEmergencia" name="contacto-emergencia" placeholder="Nombre de Contacto de Emergencia" required>
+                <input type="tel" id="telefonoEmergencia" name="telefono-emergencia" placeholder="Teléfono de Contacto de Emergencia" required>
+                
+                <!-- Información de salud -->
+                <input type="text" id="grupoSanguineo" name="grupo-sanguineo" placeholder="Grupo Sanguíneo (Opcional)">
+                <textarea id="condicionesMedicas" name="condiciones-medicas" placeholder="Condiciones Médicas Relevantes (Opcional)"></textarea>
+                <textarea id="medicamentos" name="medicamentos" placeholder="Medicamentos Actuales (Opcional)"></textarea>
+                
+                <!-- Términos y condiciones -->
+                <div>
+                    <input type="checkbox" id="acepta-terminos" name="acepta-terminos" required>
+                    <label for="acepta-terminos">Acepto los <a href="#">términos y condiciones</a></label>
+                </div>
+                <div>
+                    <input type="checkbox" id="consentimiento-imagen" name="consentimiento-imagen" required>
+                    <label for="consentimiento-imagen">Acepto el uso de mi imagen para fines promocionales</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="consentimiento-datos" name="consentimiento-datos" required>
+                    <label for="consentimiento-datos">Autorizo el tratamiento de mis datos personales</label>
+                </div>
+
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Maratón Solidaria - Aniversario FACDEF. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
