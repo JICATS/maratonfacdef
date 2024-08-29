@@ -106,3 +106,16 @@ footer ul li a {
     color: #fff;
     text-decoration: none;
 }
+/* Estilos para el segundo header */
+.secondary-header {
+    background-color: white; /* Fondo blanco para el segundo header */
+    padding: 10px; /* Espaciado alrededor del contenido */
+    text-align: center; /* Centra el contenido del header */
+}
+
+/* Imágenes dentro del segundo header */
+.secondary-header img {
+    margin: 5px; /* Margen alrededor de las imágenes */
+    max-width: 100px; /* Tamaño máximo de las imágenes (ajústalo según tus necesidades) */
+}
+
